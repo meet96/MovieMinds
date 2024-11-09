@@ -8,7 +8,7 @@ WORKDIR /app
 COPY movieminds-ui/package.json movieminds-ui/package-lock.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm install --force
 
 # Copy the rest of the React app's source code
 COPY movieminds-ui .
@@ -17,7 +17,7 @@ COPY movieminds-ui .
 RUN npm run build
 
 # Stage 2: Build Flask App
-FROM python:3.9
+FROM python:3.10
 
 # Set the working directory
 WORKDIR /app
