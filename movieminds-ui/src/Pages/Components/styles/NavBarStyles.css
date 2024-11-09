@@ -58,6 +58,128 @@
     align-items: center; */
 }
 
+/* Popup Styles */
+.popup {
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    width: 300px; /* Set a fixed width */
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup input,
+.popup select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.popup button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    background-color: #d62828;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.popup p {
+    margin-top: 10px;
+}
+
+.popup a {
+    color: #d62828;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Profile Menu Styles */
+.profile-menu {
+    position: absolute;
+    top: 50px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+    width: 200px; /* Set a fixed width */
+}
+
+.profile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-menu ul li {
+    margin-bottom: 10px;
+}
+
+.profile-menu ul li a {
+    color: #282c34;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .popup {
+        width: 80%; /* Adjust width for smaller screens */
+        right: 10%; /* Center align */
+        top: 30px; /* Adjust top position */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .profile-menu {
+        width: 80%; /* Adjust width for smaller screens */
+        right: 10%; /* Center align */
+        top: 30px; /* Adjust top position */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .popup button,
+    .profile-menu button {
+        padding: 10px; /* Adjust button padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .popup {
+        width: 90%; /* Adjust width for very small screens */
+        right: 5%; /* Center align */
+        top: 20px; /* Adjust top position */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .profile-menu {
+        width: 90%; /* Adjust width for very small screens */
+        right: 5%; /* Center align */
+        top: 20px; /* Adjust top position */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .popup input,
+    .popup button,
+    .profile-menu button {
+        padding: 5px; /* Adjust input and button padding */
+    }
+}
 @media (max-width: 650px) {
     .logo {
         width: 120px;
